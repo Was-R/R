@@ -1,0 +1,287 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+<title>R Imports - Premium Dealership</title>
+<style>
+@keyframes fadeInText {
+from {
+opacity: 0;
+transform: translateY(-50%);
+}
+to {
+opacity: 1;
+transform: translateY(0);
+}}
+@keyframes fadeInText2 {
+from {
+opacity: 0;
+transform: translateX(-100%);
+}
+to {
+opacity: 1;
+transform: translateY(0);
+}}
+	@keyframes fadeInText3 {
+from {
+opacity: 0;
+transform: translateX(+100%);
+}
+to {
+opacity: 1;
+transform: translateY(0);
+}}
+	@keyframes diss {
+from {
+opacity: 1;
+}
+to {
+opacity: 0;
+transform: translateY(+999%);
+}}
+@keyframes P1 {
+from {
+opacity: 0;
+transform: translateX(-200%);
+}
+to {
+opacity: 1;
+transform: translateX(0);
+}
+}
+@keyframes P2 {
+from {
+opacity: 0;
+transform: translateX(+200%);
+}
+to {
+opacity: 1;
+transform: translateX(0);
+}
+}
+@keyframes P3 {
+from {
+opacity: 0;
+transform: translateY(-200%);
+}
+to {
+opacity: 1;
+transform: translateY(0);
+}
+}
+body {
+    margin: 0;
+    font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+    overflow-x: hidden;
+    background-color: #F4EBD9;
+}
+.Nav {
+    background-color: #080708;
+    height: 73px;
+    top: 0;
+    position: sticky;
+    transform: translateY(-80px);
+    animation: fadeInText 0.5s ease forwards 0s;
+    z-index: 200;
+    font-size: 1.31vw;
+}
+.logo {
+    width: 17.5%;
+    margin-left: 1%;
+    margin-top: 1%;
+    transform: translateY(-80px);
+    animation: fadeInText2 0.5s ease forwards 0s;
+}
+.Bode {
+    width: 100%;
+height 10%;
+}
+.vid {
+    width: 100%;
+    background-size: cover;
+    transform: translateY(-200%);
+    animation: fadeInText 0.5s ease forwards 0s;
+    position: absolute;
+    z-index: 0;
+}
+.NavButton p {
+    color: #F4EBD9;
+}
+.Tex {
+    color: #F4EBD9;
+    font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+    text-decoration: none;
+}
+.B {
+    float: right;
+    padding: 2%;
+    text-align: center;
+	translateY(-50%);
+	opacity:0;
+	animation: fadeInText 0.2s ease forwards 0s;
+    transition: 0.1s;
+}
+	.B:last-child{
+		opacity:0;
+		animation: fadeInText2 0.2s ease forwards 0.1s;
+	}
+	.B:first-child{
+		opacity:0;
+		animation: fadeInText3 0.2s ease forwards 0.3s;
+	}
+.B:hover {
+    background-color: #DD1C1A;
+}
+.Logoc {
+    margin-top: 2%;
+    position: absolute;
+    width: 40%;
+}
+.Logoc2 {
+    margin-top: 0%;
+    position: absolute;
+    width: 100%;
+    height: 252px;
+    transform: rotate(180deg);
+}
+.bl {
+    background-color: #080708;
+    margin-top: 0%;
+}
+.Paint {
+    width: 90%;
+    margin-top: -10%;
+    margin-left: -25%;
+    z-index: 4;
+    position: relative;
+}
+.Paint2 {
+    width: 90%;
+    margin-top: 20%;
+    margin-left: 40%;
+    z-index: 4;
+    position: relative;
+	animation: fadeInText3 0.4s ease forwards 0.05s;
+	opacity:0;
+}
+.Tex2 {
+    color: #080708;
+    padding: 4%;
+    font-size: 2.7vw;
+	clear:both;
+	animation: fadeInText2 0.4s ease forwards 0.1s;
+	opacity:0;
+}
+	.Tex22 {
+    color: #080708;
+    padding: 10%;
+		padding-top:-10%;
+    font-size: 1.6vw;
+	clear:both;
+		margin-top:-10%;
+}
+.Leck {    
+	color:#080708;
+    padding: 4%;
+    font-size: 2.7vw;
+	clear:both;
+}
+.p1 {
+    margin-top: -36%;
+}
+.p2 {
+    margin-top: -40%;
+    width: 47%;
+    float: right;
+    font-size: 1.8vw;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #080708;
+  min-width: 100%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+	transition:0.3s;
+	opacity: 0;
+	margin-left:-23%;
+		margin-top:22%;
+}
+.dropdown-content a {
+  color: #F4EBD9;
+  padding: 10% 2%;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {background-color: #DD1C1A}
+.dropdown:hover .dropdown-content {
+  display: block;
+	opacity:1;
+}
+.dropdown:hover .dropbtn{
+  background-color: #3e8e41;
+}
+	.Partner{
+		padding:3%;
+		width:10%;
+		float:left;
+		transition:0.1s;
+	}
+	.Partner:hover{
+		filter: drop-shadow(0rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
+	}
+	.Partner img{
+		width:80%;
+		filter: grayscale(1);
+	}
+	.Footer {
+    background-color: #080708;
+    padding-bottom: 1%;
+    margin-top: 2%;
+    padding-left: 10%;
+    padding-top: 1%;
+    font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+    color: #F4EBD9;
+	font-size:1.3vw;
+}
+		.active{
+		background-color: #A32326;
+	}
+
+</style>
+</head>
+
+<body>
+<div class="Nav"> <a class="Lo" href="Index.html"><img class="logo" src="Img/logo (2) nav.png" /></a>
+  <div class="B"> <a class="Tex" href="Contact.html">Contact</a> </div>
+  <div class="B"> <a class="Tex" href="Events.html">Events</a> </div>
+  <div class="B active"> <a class="Tex" href="GTR.html"><strong>GT-<span style="color:red">R</span></strong> Series</a> </div>
+  <div class="B dropdown"> <a class="Tex" href="Rally.html">▼ Grails</a> 
+  <div class="dropdown-content">
+    <a href="Rally.html">Rally</a>
+    <a href="Nascar.html">Nascar</a>
+    <a href="GT1.html">GT1</a>
+  </div>
+</div>
+  <div class="B"> <b><a class="Tex" href="Picks.html">Our Picks</a> </b></div>
+</div>
+<div class="Bode"> 
+  <img src="Img/rim.png" style="width:100%;" />
+  <div class="Tex22">
+    
+    <p><strong>Nissan GT-<span style="color:red">R</span> Series</strong></p>
+	  <img style="width:100%;" src="Img/gtr35.jpg" />
+<div><p><strong>Introducing the Nissan GT-R Series</strong></p><p>At R Imports, we proudly showcase the iconic Nissan GT-R Series, a symbol of precision engineering, relentless performance, and uncompromising luxury. As the pinnacle of Japanese automotive innovation, each GT-R model in our collection exemplifies the perfect fusion of power, technology, and unparalleled driving dynamics.</p><p><strong>Unleash the Power of Japanese Performance</strong></p><ul><li><p><em>Timeless Design</em>: With its unmistakable silhouette, aggressive stance, and aerodynamic profile, the Nissan GT-R Series commands attention wherever it goes, blending style with aerodynamic efficiency.</p></li><li><p><em>Legendary Performance</em>: Powered by a handcrafted twin-turbocharged V6 engine, the GT-R Series delivers exhilarating acceleration and razor-sharp handling, ensuring an adrenaline-fueled driving experience like no other.</p></li></ul><p><strong>Experience the Thrill of Precision Engineering</strong></p><ul><li><p><em>Advanced Technology</em>: Equipped with cutting-edge performance features such as ATTESA E-TS all-wheel-drive system and advanced vehicle dynamics control, each GT-R model offers unmatched stability and control, even at the limits of performance.</p></li><li><p><em>Track-Proven Pedigree</em>: Born on the racetrack and refined through decades of motorsport dominance, the GT-R Series embodies the spirit of competition, setting new benchmarks for performance and lap times on tracks around the world.</p></li></ul><p><strong>Own a Symbol of Automotive Excellence</strong></p><ul><li><p><em>Exclusivity and Prestige</em>: As a symbol of automotive excellence, the Nissan GT-R Series is a rare find, available only to discerning enthusiasts and collectors through R Imports.</p></li><li><p><em>Timeless Legacy</em>: With a legacy that spans generations, each GT-R model represents a chapter in Nissan's storied history of performance innovation, making it a prized possession for automotive connoisseurs.</p></li></ul><p><strong>Elevate Your Driving Experience</strong></p><p>Experience the thrill of driving perfection with the Nissan GT-R Series from R Imports. Immerse yourself in the legacy of Japanese performance engineering and elevate your driving experience to new heights today.</p></div> </div> </div>
+	<div class="Footer">
+  <p>Terms and Conditions <br>
+	  P<span style="color:red">r</span>ivacy<br>
+    Copy<span style="color:red">r</span>ight<br>
+    DMCA<br>
+    Account</p>
+</div>
+</body>
+</html>
