@@ -1,0 +1,293 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+<title>R Imports - Premium Dealership</title>
+<style>
+@keyframes fadeInText {
+from {
+opacity: 0;
+transform: translateY(-50%);
+}
+to {
+opacity: 1;
+transform: translateY(0);
+}}
+@keyframes fadeInText2 {
+from {
+opacity: 0;
+transform: translateX(-100%);
+}
+to {
+opacity: 1;
+transform: translateY(0);
+}}
+	@keyframes fadeInText3 {
+from {
+opacity: 0;
+transform: translateX(+100%);
+}
+to {
+opacity: 1;
+transform: translateY(0);
+}}
+	@keyframes diss {
+from {
+opacity: 1;
+}
+to {
+opacity: 0;
+transform: translateY(+999%);
+}}
+@keyframes P1 {
+from {
+opacity: 0;
+transform: translateX(-200%);
+}
+to {
+opacity: 1;
+transform: translateX(0);
+}
+}
+@keyframes P2 {
+from {
+opacity: 0;
+transform: translateX(+200%);
+}
+to {
+opacity: 1;
+transform: translateX(0);
+}
+}
+@keyframes P3 {
+from {
+opacity: 0;
+transform: translateY(-200%);
+}
+to {
+opacity: 1;
+transform: translateY(0);
+}
+}
+body {
+    margin: 0;
+    font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+    overflow-x: hidden;
+    background-color: #F4EBD9;
+}
+.Nav {
+    background-color: #080708;
+    height: 73px;
+    top: 0;
+    position: sticky;
+    transform: translateY(-80px);
+    animation: fadeInText 0.5s ease forwards 0s;
+    z-index: 200;
+    font-size: 1.31vw;
+}
+.logo {
+    width: 17.5%;
+    margin-left: 1%;
+    margin-top: 1%;
+    transform: translateY(-80px);
+    animation: fadeInText2 0.5s ease forwards 0s;
+}
+.Bode {
+    width: 100%;
+height 10%;
+}
+.vid {
+    width: 100%;
+    background-size: cover;
+    transform: translateY(-200%);
+    animation: fadeInText 0.5s ease forwards 0s;
+    position: absolute;
+    z-index: 0;
+}
+.NavButton p {
+    color: #F4EBD9;
+}
+.Tex {
+    color: #F4EBD9;
+    font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+    text-decoration: none;
+}
+.B {
+    float: right;
+    padding: 2%;
+    text-align: center;
+	translateY(-50%);
+	opacity:0;
+	animation: fadeInText 0.2s ease forwards 0s;
+    transition: 0.1s;
+}
+	.B:last-child{
+		opacity:0;
+		animation: fadeInText2 0.2s ease forwards 0.1s;
+	}
+	.B:first-child{
+		opacity:0;
+		animation: fadeInText3 0.2s ease forwards 0.3s;
+	}
+.B:hover {
+    background-color: #DD1C1A;
+}
+.Logoc {
+    margin-top: 2%;
+    position: absolute;
+    width: 40%;
+}
+.Logoc2 {
+    margin-top: 0%;
+    position: absolute;
+    width: 100%;
+    height: 252px;
+    transform: rotate(180deg);
+}
+.bl {
+    background-color: #080708;
+    margin-top: 0%;
+}
+.Paint {
+    width: 90%;
+    margin-top: -10%;
+    margin-left: -25%;
+    z-index: 4;
+    position: relative;
+}
+.Paint2 {
+    width: 90%;
+    margin-top: 20%;
+    margin-left: 40%;
+    z-index: 4;
+    position: relative;
+	animation: fadeInText3 0.4s ease forwards 0.05s;
+	opacity:0;
+}
+.Tex2 {
+    color: #080708;
+    padding: 4%;
+    font-size: 2.7vw;
+	clear:both;
+	animation: fadeInText2 0.4s ease forwards 0.1s;
+	opacity:0;
+}
+	.Tex22 {
+    color: #080708;
+    padding: 10%;
+		padding-top:-10%;
+    font-size: 1.6vw;
+	clear:both;
+		margin-top:-10%;
+}
+.Leck {    
+	color:#080708;
+    padding: 4%;
+    font-size: 2.7vw;
+	clear:both;
+}
+.p1 {
+    margin-top: -36%;
+}
+.p2 {
+    margin-top: -40%;
+    width: 47%;
+    float: right;
+    font-size: 1.8vw;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #080708;
+  min-width: 100%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+	transition:0.3s;
+	opacity: 0;
+	margin-left:-23%;
+		margin-top:22%;
+}
+.dropdown-content a {
+  color: #F4EBD9;
+  padding: 10% 2%;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {background-color: #DD1C1A}
+.dropdown:hover .dropdown-content {
+  display: block;
+	opacity:1;
+}
+.dropdown:hover .dropbtn{
+  background-color: #3e8e41;
+}
+	.Partner{
+		padding:3%;
+		width:10%;
+		float:left;
+		transition:0.1s;
+	}
+	.Partner:hover{
+		filter: drop-shadow(0rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
+	}
+	.Partner img{
+		width:80%;
+		filter: grayscale(1);
+	}
+	.Footer {
+    background-color: #080708;
+    padding-bottom: 1%;
+    margin-top: 2%;
+    padding-left: 10%;
+    padding-top: 1%;
+    font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+    color: #F4EBD9;
+	font-size:1.3vw;
+}
+		.active{
+		background-color: #A32326;
+	}
+
+</style>
+</head>
+
+<body>
+<div class="Nav"> <a class="Lo" href="Index.html"><img class="logo" src="Img/logo (2) nav.png" /></a>
+  <div class="B active"> <a class="Tex" href="Contact.html">Contact</a> </div>
+  <div class="B"> <a class="Tex" href="Events.html">Events</a> </div>
+  <div class="B"> <a class="Tex" href="GTR.html"><strong>GT-<span style="color:red">R</span></strong> Series</a> </div>
+  <div class="B dropdown"> <a class="Tex" href="Rally.html">▼ Grails</a> 
+  <div class="dropdown-content">
+    <a href="Rally.html">Rally</a>
+    <a href="Nascar.html">Nascar</a>
+    <a href="GT1.html">GT1</a>
+  </div>
+</div>
+  <div class="B"> <b><a class="Tex" href="Picks.html">Our Picks</a> </b></div>
+</div>
+<div class="Bode"> 
+  <img src="Img/rim.png" style="width:100%;" />
+  <div class="Tex22">
+    
+    <p><strong>Contact</strong></p>
+<div><p><strong>Get in Touch with R Imports</strong></p><p>Thank you for your interest in R Imports. We are dedicated to providing unparalleled service and assistance to our valued customers. Whether you have questions about our inventory, want to schedule a test drive, or need assistance with financing options, our team is here to help.</p><p><strong>Contact Information</strong></p><p><em>R Imports Showroom</em><br>
+123 Luxury Avenue<br>
+Cityville, State 12345<br>
+Phone: +40 742 193 732<br>
+Email: <a>info@rimports.com</a></p><p><strong>Showroom Hours</strong></p><p>Monday - Friday: 9:00 AM - 6:00 PM<br>
+Saturday: 10:00 AM - 4:00 PM<br>
+Sunday: Closed</p><p><strong>Customer Support</strong></p><p>For general inquiries, assistance with your purchase, or any other questions you may have, please don't hesitate to contact our customer support team. We are committed to providing prompt and helpful assistance to ensure your experience with R Imports exceeds your expectations.</p><p><strong>Visit Us</strong></p><p>We invite you to visit our showroom and experience the luxury and performance of our premium vehicles firsthand. Our knowledgeable staff is ready to assist you and help you find the perfect vehicle to suit your needs and preferences.</p><p><strong>Connect with Us</strong></p><p>Stay up-to-date with the latest news, events, and promotions from R Imports by following us on social media. Connect with us on Facebook, Instagram, and Twitter to join our online community and be part of the R Imports family.</p><p><strong>We Look Forward to Hearing From You</strong></p><p>Whether you're a passionate enthusiast or simply curious about the world of premium automotive excellence, we welcome you to get in touch with R Imports. Contact us today and let us assist you in finding your dream car.</p></div></div> </div>
+	<div class="Footer">
+  <p>Terms and Conditions <br>
+	  P<span style="color:red">r</span>ivacy<br>
+    Copy<span style="color:red">r</span>ight<br>
+    DMCA<br>
+    Account<br>
+		Albu Constantin-Tiberiu CTDG</p>
+</div>
+</body>
+</html>
